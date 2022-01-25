@@ -102,21 +102,29 @@ close_btn.addEventListener('click', () => {
 
 $(document).ready(function(){
 
+    $('#team').hide() ;
+    $('.form-control2').hide() ;
+
     $('#Noofteam').on('change' , function() {
 
         var Noofteam = $(this).val() ;
-
-        if (Noofteam == 0)
+        console.log(Noofteam);
+        if (Noofteam == "zero")
         {
             $('#team').hide() ;
+            $('.form-control2').hide() ;
+            
         }
-        else if (Noofteam == 1)
+        else if (Noofteam == "one")
         {
             $('#team').show();
+            $('.form-control2').hide() ;
         }
-        else if (Noofteam == 2)
+        else if (Noofteam == "two")
         {
-            $('#team').show() ;
+            $('#team').hide();
+            $('.form-control2').show() ;
+           
         }
         
     });
