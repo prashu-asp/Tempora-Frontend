@@ -102,8 +102,8 @@ close_btn.addEventListener('click', () => {
 
 $(document).ready(function(){
 
-    $('#team').show() ;
-    $('.form-control1').show() ;
+    $('#team').hide() ;
+    $('.form-control1').hide() ;
     $('.form-control2').hide();
 
     $('#Noofteam').on('change' , function() {
